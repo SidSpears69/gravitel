@@ -1,42 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <img class="header__logo"src="img/logo.svg" alt="logo">
-        <ul class="nav">
-            <li class="nav__items">Экономический эффект</li>
-            <li class="nav__items">80 бизнес функций</li>
-            <li class="nav__items">Гарантии качества</li>
-        </ul>
-        <form action="" method="post" class="form">
-            <label for="phone" class="form__label">Введите ваш телефон</label>
-            <input type="tel" id="phone" name="phone" class="form__input">
-            <button type="submit" class="form__button">Заказать звонок</button>
-        </form>
-        <div class="header__slide slide">
-            <img class="slide__img" src="img/house.svg" alt="house">
-            <h1 class="slide__title">10 лет помогаем ТСЖ и управляющим компаниям экономить ( и зарабатывать ) за счёт правильной телефонии</h1>
-            <p class="slide__text">С преднастроенной интеграцией с большинством современных CRM</p>
-            <span class="slide__tag">от  1 780 руб. за  5 пользователей</span>
-        </div>
-    </header>
-    <main class="main">
-        <section class="we-can">
-            <dl class="we-can__list description-list">
-                <dt class="description-list__term">Не будем учиться за ваш счет - мы УЖЕ умеем:</dt>
-                <dd class="description-list__definition">Обрабатывать действительно большое количество звонков – снижая время ожидания на линии и загрузку операторов без потерь лояльности клиентов</dd>
-                <dd class="description-list__definition">Обеспечивать соблюдение норм законодательства при приёме заявок</dd>
-                <dd class="description-list__definition">Обеспечивать 99,98% надёжность связи, HD качество звука, быстрое соединение, защиту от прослушки и от подключения злоумышленников (и левых звонков по вашей телефонной линии за ваш счёт), поддержку 24/7;</dd>
-            </dl>
-            <span class="we-can__more">и ещё более 80 бизнес функций</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__menu">
+                <img class="header__logo" src="img/logo.svg" alt="logo">
+                <ul class="header__nav nav">
+                    <li class="nav__items">
+                        <a href=""><img src="img/economic.svg" alt="Экономический эффект">Экономический эффект</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href=""><img src="img/function.svg" alt="80 бизнес функций">80 бизнес функций</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href=""><img src="img/garancy.svg" alt="Гарантии качества">Гарантии качества</a>
+                    </li>
+                </ul>
+                <form action="" method="post" class="header__form form">
+                    <label for="phone" class="form__label">Введите Ваш Телефон</label>
+                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="+7(...)......">
+                    <button type="submit" class="form__button">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="header__slide slide">
+                <div class="slide__top">
+                    <img class="slide__img" src="img/house.svg" alt="house">
+                    <h1 class="slide__title">10 лет помогаем</h1>
+                </div>
+                <div class="slide__wrapper">
+                    <p class="slide__text slide__text--first">ТСЖ и управляющим компаниям</p>
+                </div>
+                <p class="slide__text slide__text--second">экономить ( и зарабатывать )</p>
+                <p class="slide__text slide__text--third">за счёт правильной телефонии</p>
+                <div class="slide__bottom">
+                    <p class="slide__feature">С преднастроенной интеграцией<br>с большинством современных CRM</p>
+                    <span class="slide__tag">от
+                        <span class="slide__counter">1 780 руб.</span><br>за
+                        <span class="slide__counter slide__counter--second">5</span>
+                        пользователей</span>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="we-can">
+                <dl class="we-can__list">
+                    <dt class="we-can__term">Не будем учиться за ваш счет - мы УЖЕ умеем:</dt>
+                    <dd class="we-can__definition">
+                        <p>Обрабатывать действительно большое количество звонков – снижая время ожидания на линии и загрузку операторов без потерь лояльности клиентов</p>
+                    </dd>
+                    <dd class="we-can__definition we-can__definition--second">
+                        <p>Обеспечивать соблюдение норм законодательства при приёме заявок</p>
+                    </dd>
+                    <dd class="we-can__definition">
+                        <p>Обеспечивать 99,98% надёжность связи, HD качество звука, быстрое соединение, защиту от прослушки и от подключения злоумышленников (и левых звонков по вашей телефонной линии за ваш счёт), поддержку 24/7;</p>
+                    </dd>
+                </dl>
+                <span class="we-can__more">и ещё
+                    <span>более 80 бизнес функций</span>
+                </span>
+            </section>
+            <section class="economy">
+                <div class="economy__wrapper">
+                    <div class="economy__header">
+                        <img class="economy__img" src="img/flower.svg" alt="flower">
+                        <div class="economy__text">
+                            <h2 class="economy__title">Экономический
+                                <span>Эффект</span>
+                            </h2>
+                            <p class="economy__paragraph">
+                                <span>до +200 000 руб. в год</span>
+                                <span>на каждом сотруднике</span>
+                                <span>и рост продаж</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="economy__list accordeon">
+                        <div class="accordeon__column">
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">Экономия на связи
+                                    <span>до 90%</span>
+                                </p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">Освобождение
+                                    <span>до 25% времени</span>
+                                    сотрудников на их прямые обязанности</p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">Сокращение количества потерянных лидов
+                                    <span>до нуля</span>
+                                </p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                        </div>
+                        <div class="accordeon__column">
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">
+                                    <span>До +30%</span>
+                                    вх. звонков,
+                                    <span>до +30%</span>
+                                    рост вероятности, что на вас снимут трубку, при исх. звонках</p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">Рост результативности работы отделов продаж
+                                    <span>в разы</span>
+                                </p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">Возможность увеличить эффективность рекламных кампаний
+                                    <span>в разы</span>
+                                </p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                            <div class="accordeon__item">
+                                <input class="accordeon__input" type="checkbox" checked>
+                                <p class="accordeon__header">
+                                    <span>Рост</span>
+                                    лояльности клиентов и сотрудников</p>
+                                <p class="accordeon__text">Нет затрат на телефонную станцию, провода, телефонные аппараты и их обслуживание – все через программное обеспечение и интернет. Бесплатная внутрикорпоративная связь, экономия на региональной связи до 50%, на междугородней до 70%, на международной до 90%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section-form">
+                <div class="section-form__wrapper">
+                        <h3 class="section-form__title">Хотите узнать, сколько денег мы можем помочь сэкономить (заработать) лично вам?</h3>
+                        <form action="" method="post" class="section-form__form form">
+                            <label for="phone_1" class="form__label form__label--section-form">Введите ваш телефон</label>
+                            <input type="tel" id="phone_1" name="phone" class="form__input form__input--section-form" placeholder="+7(...)......">
+                            <button type="submit" class="form__button form__button--section-form">Заказать звонок</button>
+                        </form>
+                </div>
+            </section>
+            <section class="function">
+                <div class="function__header function-title">
+                    <span class="function-title__more">Более</span>
+                    <h2 class="function-title__title"><span>80</span> бизнес функций</h2>
+                    <span class="function-title__gravitel">ВАТС<span>Гравител</span></span>
+                    <img class="function__img" src="img/monitor.svg" alt="monitor">
+                </div>
+                <div class="function__wrapper">
+                    <p class="function__text">В нашей Виртуальной АТС собраны <span>только самые необходимые функции</span> для полноценной работы</p>
+                </div>
+                <div class="function__wrapper function__wrapper--second">
+                    <p class="function__text function__text--second">Мы предоставляем широкий набор инструментов<br>для современных коммуникаций</p>
+                </div>
+                <div class="function__slider slider">
+                    <div class="slider__items">
+                        <div class="slider__hexagon">
+                            <img class="slider__img" src="img/ring.svg" alt="ring">
+                        </div>
+                        <dl class="slider__list">
+                            <dt class="slider__term">Уведомления</dt>
+                            <dd class="slider__definition">REST API</dd>
+                            <dd class="slider__definition">Выгрузка статистики</dd>
+                            <dd class="slider__definition">Управления списком
+                            </dd>
+                            <dd class="slider__definition">Web RTC SDK</dd>
+                            <dd class="slider__definition">Call API</dd>
+                            <dd class="slider__definition">text-to-speech и speech-to-text</dd>
+                        </dl>
+                    </div>
+                    <div class="slider__items">
+                            <div class="slider__hexagon">
+                                    <img class="slider__img" src="img/api.svg" alt="api">
+                                </div>
+                        <dl>
+                            <dt class="slider__term">Программный интерфейс(API)</dt>
+                            <dd class="slider__definition">REST API</dd>
+                            <dd class="slider__definition">Выгрузка статистики</dd>
+                            <dd class="slider__definition">Управления списком обзвона</dd>
+                            <dd class="slider__definition">Web RTC SDK</dd>
+                            <dd class="slider__definition">Call API</dd>
+                            <dd class="slider__definition">text-to-speech и speech-to-text</dd>
+                        </dl>
+                    </div>
+                    <div class="slider__items">
+                            <div class="slider__hexagon">
+                                    <img class="slider__img" src="img/phone.svg" alt="phone">
+                                </div>
+                        <dl>
+                            <dt class="slider__term">Телефонные номера</dt>
+                            <dd class="slider__definition">REST API</dd>
+                            <dd class="slider__definition">Выгрузка статистики</dd>
+                            <dd class="slider__definition">Управления списком
+                            </dd>
+                            <dd class="slider__definition">Web RTC SDK</dd>
+                            <dd class="slider__definition">Call API</dd>
+                            <dd class="slider__definition">text-to-speech и speech-to-text</dd>
+                        </dl>
+                    </div>
+                    <div class="slider__controls">
+                        <button class="slider__button">Еще функции</button>
+                        <div class="slider__pagination"></div>
+                        <button class="slider__button">Еще функции</button>
+                    </div>
+                </div>
+            </section>
+            <section class="garancy">
+                <div class="garancy__header">
+                    <img class="garancy__img" src="img/medal.svg" alt="medal">
+                    <h2 class="garancy__title">Гарантии качества</h2>
+                    <p class="garancy__text">Многие гарантируют качество работы СВОИХ сервисов</p>
+                    <p class="garancy__text">Мы гарантируем глубокое погружение в ВАШ бизнес, чтобы обеспечить интеграцию телефонии в ВАШ бизнес, чтобы повысить качество работы ВАШЕГО бизнеса!</p>
+                </div>
+                <div class="garancy__features">
+                    <p class="garancy__feature">Более 10 лет на рынке</p>
+                    <p class="garancy__feature">Более 3500 клиентов</p>
+                    <p class="garancy__feature">Из более 100 отраслей</p>
+                </div>
+                <p class="garancy__footer">Лучшие практики для организации и автоматизации бизнес процессов коммуникации с клиентами, партнёрами, поставщиками, сотрудниками распределенных офисов</p>
+            </div>
         </section>
-    </main>
-</body>
-</html>
+        <section class="section-form">
+            <h3>Хотите узнать, кому из вашей отрасли и сколько мы помогли сэкономить (заработать)?</h3>
+            <form action="" method="post" class="section-form__form form">
+                <label for="phone" class="form__label">Введите ваш телефон</label>
+                <input type="tel" id="phone" name="phone" class="form__input">
+                <button type="submit" class="form__button">Заказать звонок</button>
+            </form>
+        </section>
+    </body>
+</html></main></body></html>

@@ -1,0 +1,19 @@
+.nav__items {
+    font-size: 0;
+    margin-left: 20px;
+    padding-left: 25px;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 70px;
+        width: 10px;
+        background: url("../img/border.svg") center center no-repeat;
+        left: 0;
+        top: 50%;
+        background-size: contain;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+}

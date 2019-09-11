@@ -7,7 +7,10 @@ module.exports = function (grunt) {
           "source/css/style.css": ["source/less/style.less"],
           "build/css/style.css": ["source/less/style.less"]
         }
-      }
+      },
+      options: {
+        javascriptEnabled: true
+    }
     },
     postcss: {
       options: {
@@ -75,7 +78,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: "source/",
           src: [
-            "fonts/**/*.{woff,woff2}",
+            "fonts/**",
             "img/**",
             "js/**",
             "*.html"

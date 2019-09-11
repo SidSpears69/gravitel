@@ -1,5 +1,5 @@
 {
-    "name": "Gravitel",
+    "name": "gravitel",
     "version": "0.0.1",
     "devDependencies": {
         "autoprefixer": "^9.1.1",
