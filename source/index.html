@@ -29,6 +29,7 @@
                     <input type="tel" id="phone" name="phone" class="form__input" placeholder="+7(...)......">
                     <button type="submit" class="form__button">Заказать звонок</button>
                 </form>
+                <a href="" class="header__link">Заказать звонок</a>
             </div>
             <div class="header__slide slide">
                 <div class="slide__top">
@@ -144,14 +145,14 @@
             </section>
             <section class="section-form">
                 <div class="section-form__container">
-                        <div class="section-form__wrapper">
-                                <h3 class="section-form__title">Хотите узнать, сколько денег мы можем помочь сэкономить (заработать) лично вам?</h3>
-                                <form action="" method="post" class="section-form__form form">
-                                    <label for="phone_1" class="form__label form__label--section-form">Введите ваш телефон</label>
-                                    <input type="tel" id="phone_1" name="phone" class="form__input form__input--section-form" placeholder="+7(...)......">
-                                    <button type="submit" class="form__button form__button--section-form">Заказать звонок</button>
-                                </form>
-                            </div>
+                    <div class="section-form__wrapper">
+                        <h3 class="section-form__title">Хотите узнать, сколько денег мы можем помочь сэкономить (заработать) лично вам?</h3>
+                        <form action="" method="post" class="section-form__form form">
+                            <label for="phone_1" class="form__label form__label--section-form">Введите ваш телефон</label>
+                            <input type="tel" id="phone_1" name="phone" class="form__input form__input--section-form" placeholder="+7(...)......">
+                            <button type="submit" class="form__button form__button--section-form">Заказать звонок</button>
+                        </form>
+                    </div>
                 </div>
             </section>
             <section class="function">
@@ -160,9 +161,11 @@
                     <h2 class="function-title__title">
                         <span>80</span>
                         бизнес функций</h2>
-                    <span class="function-title__gravitel">ВАТС<span>Гравител</span>
-                    </span>
-                    <img class="function__img" src="img/monitor.svg" alt="monitor">
+                    <div class="function-title__gravitel">
+                        <p class="function-title__text">ВАТС<span>Гравител</p>
+                            <img class="function-title__img" src="img/monitor.svg" alt="monitor">
+                        </p>
+                    </div>
                 </div>
                 <div class="function__wrapper">
                     <p class="function__text">В нашей Виртуальной АТС собраны
@@ -173,282 +176,327 @@
                     <p class="function__text function__text--second">Мы предоставляем широкий набор инструментов<br>для современных коммуникаций</p>
                 </div>
                 <div class="function__wrapper function__wrapper--third">
-                <div class="function__slider slider swiper-container">
-                    <div class="swiper-wrapper">
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/ring.svg" alt="ring">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Уведомления</p>
-                            </div>
-                            <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/api.svg" alt="api">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Программный интерфейс (API)</p>
-                            </div>
-                            <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком обзвона</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech<br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/phone.svg" alt="phone">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Телефонные номера</p>
-                            </div>
-                            <ul class="slider__list">
-                                <li class="slider__list-item">REST API</li>
-                                <li class="slider__list-item">Выгрузка статистики</li>
-                                <li class="slider__list-item">Управления списком</li>
-                                <li class="slider__list-item">Web RTC SDK</li>
-                                <li class="slider__list-item">Call API</li>
-                                <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/ring.svg" alt="ring">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Уведомления</p>
-                            </div>
-                            <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/api.svg" alt="api">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Программный интерфейс (API)</p>
-                            </div>
-                            <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком обзвона</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech<br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/phone.svg" alt="phone">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Телефонные номера</p>
-                            </div>
-                            <ul class="slider__list">
-                                <li class="slider__list-item">REST API</li>
-                                <li class="slider__list-item">Выгрузка статистики</li>
-                                <li class="slider__list-item">Управления списком</li>
-                                <li class="slider__list-item">Web RTC SDK</li>
-                                <li class="slider__list-item">Call API</li>
-                                <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/api.svg" alt="api">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Программный интерфейс (API)</p>
-                            </div>
-                            <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком обзвона</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech<br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                        <div class="slider__hexagon">
-                            <img class="slider__img" src="img/phone.svg" alt="phone">
-                        </div>
-                        <div class="slider__text">
-                            <div class="slider__wrapper">
-                                <p class="slider__term">Телефонные номера</p>
-                            </div>
-                            <ul class="slider__list">
-                                <li class="slider__list-item">REST API</li>
-                                <li class="slider__list-item">Выгрузка статистики</li>
-                                <li class="slider__list-item">Управления списком</li>
-                                <li class="slider__list-item">Web RTC SDK</li>
-                                <li class="slider__list-item">Call API</li>
-                                <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="slider__item swiper-slide">
-                            <div class="slider__hexagon">
-                                <img class="slider__img" src="img/ring.svg" alt="ring">
-                            </div>
-                            <div class="slider__text">
-                                <div class="slider__wrapper">
-                                    <p class="slider__term">Уведомления</p>
+                    <div class="function__slider slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Уведомления</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <ul class="slider__list">
-                                        <li class="slider__list-item">REST API</li>
-                                        <li class="slider__list-item">Выгрузка статистики</li>
-                                        <li class="slider__list-item">Управления списком</li>
-                                        <li class="slider__list-item">Web RTC SDK</li>
-                                        <li class="slider__list-item">Call API</li>
-                                        <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="slider__item swiper-slide">
-                            <div class="slider__hexagon">
-                                <img class="slider__img" src="img/api.svg" alt="api">
-                            </div>
-                            <div class="slider__text">
-                                <div class="slider__wrapper">
-                                    <p class="slider__term">Программный интерфейс (API)</p>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Программный интерфейс (API)</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком обзвона</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <ul class="slider__list">
-                                        <li class="slider__list-item">REST API</li>
-                                        <li class="slider__list-item">Выгрузка статистики</li>
-                                        <li class="slider__list-item">Управления списком обзвона</li>
-                                        <li class="slider__list-item">Web RTC SDK</li>
-                                        <li class="slider__list-item">Call API</li>
-                                        <li class="slider__list-item">text-to-speech<br>и speech-to-text</li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="slider__item swiper-slide">
-                            <div class="slider__hexagon">
-                                <img class="slider__img" src="img/phone.svg" alt="phone">
-                            </div>
-                            <div class="slider__text">
-                                <div class="slider__wrapper">
-                                    <p class="slider__term">Телефонные номера</p>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Телефонные номера</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <ul class="slider__list">
-                                    <li class="slider__list-item">REST API</li>
-                                    <li class="slider__list-item">Выгрузка статистики</li>
-                                    <li class="slider__list-item">Управления списком</li>
-                                    <li class="slider__list-item">Web RTC SDK</li>
-                                    <li class="slider__list-item">Call API</li>
-                                    <li class="slider__list-item">text-to-speech <br>и speech-to-text</li>
-                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Уведомления</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Программный интерфейс (API)</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком обзвона</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Телефонные номера</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Уведомления</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Программный интерфейс (API)</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком обзвона</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Телефонные номера</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Уведомления</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider__item">
+                                    <div class="slider__hexagon">
+                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                    </div>
+                                    <div class="slider__text">
+                                        <div class="slider__wrapper">
+                                            <p class="slider__term">Программный интерфейс (API)</p>
+                                        </div>
+                                        <ul class="slider__list">
+                                            <li class="slider__list-item">REST API</li>
+                                            <li class="slider__list-item">Выгрузка статистики</li>
+                                            <li class="slider__list-item">Управления списком обзвона</li>
+                                            <li class="slider__list-item">Web RTC SDK</li>
+                                            <li class="slider__list-item">Call API</li>
+                                            <li class="slider__list-item">text-to-speech
+                                                <br>и speech-to-text</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>     
                 <div class="slider__control">
-                        <div class="swiper-button-prev">ещё функции</div>
-                        <div class="swiper-pagination"><span class="swiper-pagination-bullet1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet1"></span></div>
-                        <div class="swiper-button-next">ещё функции</div>
-                </div> 
+                    <div class="swiper-button-prev">ещё функции</div>
+                    <div class="swiper-pagination">
+                        <span class="swiper-pagination-bullet1"></span>
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet1"></span>
+                    </div>
+                    <div class="swiper-button-next">ещё функции</div>
+                </div>
             </section>
             <section class="garancy">
                 <div class="garancy__header">
                     <div class="garancy__wrapper">
                         <div class="garancy__left">
-                                <img class="garancy__img" src="img/medal.svg" alt="medal">
+                            <img class="garancy__img" src="img/medal.svg" alt="medal">
                         </div>
-                            <div class="garancy__right">
-                                    <img class="garancy__img garancy__img--second" src="img/garancy.svg" alt="Гарантии качества">
-                                    <p class="garancy__text">Многие гарантируют<br>качество работы <span>СВОИХ</span> сервисов</p>
-                                    <p class="garancy__text garancy__text--second">Мы гарантируем <span>глубокое погружение в ВАШ бизнес,</span></p>
-                                    <p class="garancy__text garancy__text--third">чтобы обеспечить интеграцию телефонии в ВАШ бизнес, чтобы повысить качество работы ВАШЕГО бизнеса!</p>
-                            </div>
+                        <div class="garancy__right">
+                            <img class="garancy__img garancy__img--second" src="img/garancy.svg" alt="Гарантии качества">
+                            <p class="garancy__text">Многие гарантируют<br>качество работы
+                                <span>СВОИХ</span>
+                                сервисов</p>
+                            <p class="garancy__text garancy__text--second">Мы гарантируем
+                                <span>глубокое погружение в ВАШ бизнес,</span>
+                            </p>
+                            <p class="garancy__text garancy__text--third">чтобы обеспечить интеграцию телефонии в ВАШ бизнес, чтобы повысить качество работы ВАШЕГО бизнеса!</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="garancy__features features">
                     <div class="features__wrapper">
                         <div class="garancy__wrapper features__items">
-                    <div class="features__item">
-                        <p class="features__text">Более</p>
-                        <p class="features__text features__text--second">10 <span>лет</span></p>
-                        <p class="features__text features__text--third">на рынке</p>
-                </div>
-                <div class="features__item features__item--second">
-                        <p class="features__text">Более</p>
-                        <p class="features__text features__text--second">3500</p>
-                        <p class="features__text features__text--large">клиентов</p>
-                </div>
-                <div class="features__item">
-                        <p class="features__text">Из более</p>
-                        <p class="features__text features__text--second">100</p>
-                        <p class="features__text features__text--third">отраслей</p>
-                </div>
-                </div>
-                </div>
+                            <div class="features__item">
+                                <p class="features__text">Более</p>
+                                <p class="features__text features__text--second">10
+                                    <span>лет</span>
+                                </p>
+                                <p class="features__text features__text--third">на рынке</p>
+                            </div>
+                            <div class="features__item features__item--second">
+                                <p class="features__text">Более</p>
+                                <p class="features__text features__text--second">3500</p>
+                                <p class="features__text features__text--large">клиентов</p>
+                            </div>
+                            <div class="features__item">
+                                <p class="features__text">Из более</p>
+                                <p class="features__text features__text--second">100</p>
+                                <p class="features__text features__text--third">отраслей</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="garancy__footer">
-                    <p class="garancy__text garancy__text--footer">Лучшие практики для <span>организации</span> и <span>автоматизации</span> бизнес процессов коммуникации с клиентами, партнёрами, поставщиками, сотрудниками распределенных офисов</p>
-                </div>               
+                    <p class="garancy__text garancy__text--footer">Лучшие практики для
+                        <span>организации</span>
+                        и
+                        <span>автоматизации</span>
+                        бизнес процессов коммуникации с клиентами, партнёрами, поставщиками, сотрудниками распределенных офисов</p>
+                </div>
             </section>
             <section class="section-form">
-                    <div class="section-form__container">
-                            <div class="section-form__wrapper">
-                                    <h3 class="section-form__title">Хотите узнать, кому из вашей отрасли и сколько мы помогли сэкономить (заработать)?</h3>
-                                    <form action="" method="post" class="section-form__form form">
-                                        <label for="phone_1" class="form__label form__label--section-form">Введите ваш телефон</label>
-                                        <input type="tel" id="phone_1" name="phone" class="form__input form__input--section-form" placeholder="+7(...)......">
-                                        <button type="submit" class="form__button form__button--section-form">Заказать звонок</button>
-                                    </form>
-                                </div>
+                <div class="section-form__container">
+                    <div class="section-form__wrapper">
+                        <h3 class="section-form__title">Хотите узнать, кому из вашей отрасли и сколько мы помогли сэкономить (заработать)?</h3>
+                        <form action="" method="post" class="section-form__form form">
+                            <label for="phone_1" class="form__label form__label--section-form">Введите ваш телефон</label>
+                            <input type="tel" id="phone_1" name="phone" class="form__input form__input--section-form" placeholder="+7(...)......">
+                            <button type="submit" class="form__button form__button--section-form">Заказать звонок</button>
+                        </form>
                     </div>
-                </section>
+                </div>
+            </section>
         </main>
         <script>
-                var mySwiper = new Swiper(".swiper-container", {
-        mode: 'horizontal',
-        slidesPerView: 'auto',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-      el: '.swiper-pagination',
-    },
-        spaceBetween : 155,
-        loopedSlides: 3
-    });
+            var mySwiper = new Swiper(".swiper-container", {
+                mode: 'horizontal',
+                slidesPerView: '3',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+                loopedSlides: 3
+            });
         </script>
     </body>
 </html>

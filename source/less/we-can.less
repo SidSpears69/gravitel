@@ -11,8 +11,6 @@ main {
 .we-can__list {
     border: 5px solid #e0e0e0;
     padding-top: 36px;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
     border-radius: 20px;
     color: #000000;
@@ -26,7 +24,7 @@ main {
 
 .we-can__definition {
     font-size: 26px;
-    margin-left: -35px;
+    margin-left: 0;
     max-width: 973px;
     position: relative;
     z-index: 2;
@@ -55,8 +53,9 @@ main {
     }
 
     &--second {
+        text-align: center;
+        color: #374f93;
         &::before {
-            content: '';
             display: none;
         }
     }
@@ -87,3 +86,29 @@ main {
         font-weight: 700;
     }
 }
+@media @tablet-widths {
+    .we-can {
+        margin-bottom: 75px;
+    }
+    .we-can__term {
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
+    .we-can__definition {
+        font-size: 17px;
+        & p {
+            padding-top: 18px;
+            padding-bottom: 17px;
+            line-height: 19.89px;
+        }
+    }
+    .we-can__more {
+        font-size: 20px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+    .we-can__list {
+        padding-top: 24px;
+        padding-bottom: 46px;
+    }
+    }

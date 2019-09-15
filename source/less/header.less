@@ -1,5 +1,6 @@
 .header {
     margin-bottom: 65px;
+    margin-top: 52px;
 }
 .header__menu {
     .container-fluid();
@@ -21,10 +22,31 @@
 .header__form {
     width: 27%;
 }
+.header_link {
+    display: none;
+}
 .header__slide {
     margin-top: 72px;
 }
+@media @tablet-widths {
+.header__form {
+    display: none;
+}
+.header__link {
+    display: block;
+    color: #456575;
+font-family: "Glober Semi Bold";
+font-size: 13px;
+text-transform: uppercase;
+width: 100px;
+padding: 11px;
+border: 5px solid #dce2f6;
+border-radius: 10px;
+align-self: flex-end;
+box-sizing: border-box;
+}
 
+}
 
 
 

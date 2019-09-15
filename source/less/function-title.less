@@ -24,17 +24,53 @@
         line-height: 80px;
     }
 }
-
 .function-title__gravitel {
-    width: 355px;
+    display: flex;
+}
+.function-title__text {
     color: #616b9b;
     font-family: "Glober Bold";
     line-height: 62.55px;
     text-transform: uppercase;
     font-size: 76px;
     align-self: flex-end;
+    margin-right: 60px;
     & span {
         color: #3b4f66;
         display: block;
     }
 }
+.function-title__img {
+    position: relative;
+    top: 100px;
+}
+@media @tablet-widths {
+    .function-title {
+        max-width: 740px;
+        justify-content: space-between;
+    }
+ .function-title__more {
+    font-size: 39px;
+ }
+ .function-title__title {
+     font-size: 44px;
+     & span {
+         font-size: 136px;
+     }
+ }
+ .function-title__gravitel {
+     flex-direction: column;
+ }
+ .function-title__text {
+    font-size: 68px;
+    order: 1;
+    margin-right: 0;
+}
+.function-title__img {
+    top: 0;
+    margin-bottom: 21px;
+    width: 186px;
+    height: auto;
+}
+
+     }

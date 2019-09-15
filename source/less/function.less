@@ -10,6 +10,7 @@
         background-color: #ffffff;
         border-bottom: 9px solid #f6f7fa;
         padding-bottom: 54px;
+        margin-top: 57px;
     }
 }
 .function__text {
@@ -29,7 +30,22 @@
         color: #777d91;
     }
 }
-.function__img {
-    position: relative;
-    top: 100px;
-}
+@media @tablet-widths {
+    .function__header {
+        margin-top: 41px;
+        margin-bottom: 32px;
+    }
+    .function__text {
+        max-width: 740px;
+        font-size: 29px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        &--second {
+            padding-top: 20px;
+            font-size: 26px;
+        }
+    }
+    .function__wrapper--third {
+        margin-top: 14px;
+    }
+        }

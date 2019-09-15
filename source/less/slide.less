@@ -99,3 +99,48 @@
         font-size: 26px;
     }
 }
+@media @tablet-widths {
+    .slide__img {
+        max-width: 640px;
+        display: block;
+        margin: 0 auto;
+    }
+    .slide__text {
+        font-size: 40px;
+        &--second,
+        &--third {
+            font-size: 38px;
+        }
+    }
+    .slide__feature {
+        font-size: 19px;
+        width: 45%;
+    }
+    .slide__tag {
+        width: 18%;
+        font-size: 14px;
+        padding: 10px 22px 11px 16px;
+        &::before {
+            border-bottom: 10px solid #ffffff;
+            border-left: 10px solid #dbdde1;
+        }
+    &::after {
+        border-left: 1px solid #dbdde1;
+        width: 50px;
+        height: 30px;
+        content: '';
+        position: absolute;
+        transform: rotate(50deg);
+        right: -31px;
+        bottom: -25px;
+        background: #ffffff;
+      }
+    }
+    .slide__counter {
+        font-size: 17px;
+        color: #3a3a3a;
+        &--second {
+            font-size: 20px;
+        }
+    }
+    }
