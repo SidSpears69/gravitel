@@ -1,11 +1,14 @@
 .function__header {
     margin-bottom: 53px;
 }
+
 .function__wrapper {
     background-color: #f3f4f9;
+
     &--second {
         background-color: #ffffff;
     }
+
     &--third {
         background-color: #ffffff;
         border-bottom: 9px solid #f6f7fa;
@@ -13,6 +16,7 @@
         margin-top: 57px;
     }
 }
+
 .function__text {
     max-width: 1240px;
     margin: 0 auto;
@@ -22,30 +26,53 @@
     text-transform: uppercase;
     padding-top: 25px;
     padding-bottom: 25px;
+
     & span {
         color: #3b4f66;
         display: block;
     }
+
     &--second {
         color: #777d91;
     }
 }
+
 @media @tablet-widths {
     .function__header {
         margin-top: 41px;
         margin-bottom: 32px;
     }
+
     .function__text {
         max-width: 740px;
         font-size: 29px;
         padding-top: 24px;
         padding-bottom: 24px;
+
         &--second {
             padding-top: 20px;
             font-size: 26px;
         }
     }
+
     .function__wrapper--third {
         margin-top: 14px;
     }
+}
+
+@media @mobile-widths {
+    .function {
+        margin-top: 24px;
+    }
+    .function__text {
+        max-width: 90%;
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &--second {
+            padding-top: 11px;
+            font-size: 15px;
         }
+    }
+    
+}

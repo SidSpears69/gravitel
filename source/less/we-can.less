@@ -112,3 +112,41 @@ main {
         padding-bottom: 46px;
     }
     }
+    @media @mobile-widths {
+        .we-can__list {
+            padding-top: 19px;
+        }
+        .we-can__term {
+            font-size: 17px;
+            text-align: left;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        .we-can__definition {
+            font-size: 13px;
+            &:before {
+                border-top: 4px solid #ffffff;
+                border-bottom: 4px solid #ffffff;
+            }
+            p {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+        .we-can__definition--second {
+            text-align: left;
+            &::before {
+                display: block;
+                background: #ffffff;
+                border: 0;
+            }
+        }
+        .we-can__more {
+            font-size: 15px;
+            padding-top: 10px;
+            padding-bottom: 8px;
+            border-width: 4px;
+            border-radius: 10px;
+            bottom: -20px;
+        }
+        }

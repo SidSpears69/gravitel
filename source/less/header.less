@@ -22,7 +22,7 @@
 .header__form {
     width: 27%;
 }
-.header_link {
+.header__link {
     display: none;
 }
 .header__slide {
@@ -47,6 +47,27 @@ box-sizing: border-box;
 }
 
 }
-
+@media @mobile-widths {
+    .header {
+        margin-bottom: 24px;
+    }
+    .header__logo {
+        width: auto;
+    }
+    .header__menu {
+        display: block;
+        text-align: center;
+    }
+        .header__nav {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            align-items: flex-start;
+            max-width: 200px;
+    }
+    .header__link {
+        margin: 0 auto;
+    }
+    }
 
 

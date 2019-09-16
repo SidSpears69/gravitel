@@ -67,6 +67,7 @@ color: #3f434f;
 font-size: 16px;
 padding-bottom: 22px;
 transition: all 0.25s ease-in-out;
+max-height: none;
 }
 @media @tablet-widths {
     .accordeon {
@@ -76,3 +77,42 @@ transition: all 0.25s ease-in-out;
         width: 100%;
     }
     }
+    @media @mobile-widths {
+        .accordeon__header {
+            padding-left: 5%;
+            padding-right: 5%;
+            border-radius: 0;
+            font-size: 16px;
+            padding-top: 19px;
+            padding-bottom: 11px;
+            margin-bottom: 15px;
+            &::before {
+                display: none;
+            }
+        }
+        .accordeon__text {
+            font-size: 14px;
+            padding-right: 5% !important;
+            padding-left: 5% !important;
+            padding-bottom: 15px;
+        }
+        .accordeon__column:first-child .accordeon__item:first-child .accordeon__input {
+            &:checked ~ .accordeon__text {
+                max-height: none;
+                padding-bottom: 15px;
+                padding-right: 5%;
+            padding-left: 5%;
+                opacity: 1;
+                transition: all 0.25s ease-in-out;
+            }
+            & ~ .accordeon__text {
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 5%;
+                padding-left: 5%;
+                opacity: 0;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+        }

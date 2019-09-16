@@ -14,13 +14,13 @@
             <div class="header__menu">
                 <img class="header__logo" src="img/logo.svg" alt="logo">
                 <ul class="header__nav nav">
-                    <li class="nav__items">
+                    <li class="nav__item">
                         <a href=""><img src="img/economic.svg" alt="Экономический эффект">Экономический эффект</a>
                     </li>
-                    <li class="nav__items">
+                    <li class="nav__item">
                         <a href=""><img src="img/function.svg" alt="80 бизнес функций">80 бизнес функций</a>
                     </li>
-                    <li class="nav__items">
+                    <li class="nav__item">
                         <a href=""><img src="img/garancy.svg" alt="Гарантии качества">Гарантии качества</a>
                     </li>
                 </ul>
@@ -39,7 +39,7 @@
                 <div class="slide__wrapper">
                     <p class="slide__text slide__text--first">ТСЖ и управляющим компаниям</p>
                 </div>
-                <p class="slide__text slide__text--second">экономить ( и зарабатывать )</p>
+                <p class="slide__text slide__text--second">экономить <span>( и зарабатывать )</span></p>
                 <p class="slide__text slide__text--third">за счёт правильной телефонии</p>
                 <div class="slide__bottom">
                     <p class="slide__feature">С преднастроенной интеграцией<br>с большинством современных CRM</p>
@@ -202,7 +202,7 @@
                             <div class="swiper-slide">
                                 <div class="slider__item">
                                     <div class="slider__hexagon">
-                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                        <img class="slider__img" src="img/api.svg" alt="ring">
                                     </div>
                                     <div class="slider__text">
                                         <div class="slider__wrapper">
@@ -223,7 +223,7 @@
                             <div class="swiper-slide">
                                 <div class="slider__item">
                                     <div class="slider__hexagon">
-                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                        <img class="slider__img" src="img/phone.svg" alt="ring">
                                     </div>
                                     <div class="slider__text">
                                         <div class="slider__wrapper">
@@ -244,7 +244,7 @@
                             <div class="swiper-slide">
                                 <div class="slider__item">
                                     <div class="slider__hexagon">
-                                        <img class="slider__img" src="img/ring.svg" alt="ring">
+                                        <img class="slider__img" src="img/phone.svg" alt="ring">
                                     </div>
                                     <div class="slider__text">
                                         <div class="slider__wrapper">
@@ -485,7 +485,19 @@
             </section>
         </main>
         <script>
-            var mySwiper = new Swiper(".swiper-container", {
+            var breakpoint = window.matchMedia( '(max-width:767px)' );
+  var mySwiper;
+  var breakpointChecker = function() {
+    if ( breakpoint.matches === true ) {
+	  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+	  return;
+      } else if ( breakpoint.matches === false ) {
+        return enableSwiper();
+      }
+
+  };
+  var enableSwiper = function() {
+    mySwiper = new Swiper(".swiper-container", {
                 mode: 'horizontal',
                 slidesPerView: '3',
                 navigation: {
@@ -496,7 +508,11 @@
                     el: '.swiper-pagination'
                 },
                 loopedSlides: 3
-            });
+
+    });
+  };
+  breakpoint.addListener(breakpointChecker);
+  breakpointChecker();
         </script>
     </body>
 </html>
