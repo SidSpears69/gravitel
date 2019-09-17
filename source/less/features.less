@@ -103,4 +103,30 @@
         height: 306px;
         top: -55px;
     }
+
+    
 }
+@media @mobile-widths {
+    .features {
+        border-top-width: 6px;
+    }
+    .features__items{
+        max-width: 100%;
+    }
+    .features__item {
+        width: 100%;
+        &:first-child {
+            margin-bottom: 247px;
+            border-bottom: 20px solid #e8f0fa;
+        }
+        &:nth-child(3) {
+            border-top: 20px solid #e8f0fa;
+        }
+        &--second {
+            top: 50%;
+            bottom: 50%;
+            transform: translate(-50%, -50%);
+            width: 306px;
+        }
+    }
+    }
