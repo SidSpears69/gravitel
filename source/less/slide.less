@@ -4,12 +4,12 @@
 }
 
 .slide__img {
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .slide__title {
     position: absolute;
-    bottom: 28px;
+    bottom: 0;
     color: #9fa7cc;
     background: linear-gradient(to right, #7783bc, #9fa7cc);
     -webkit-background-clip: text;
@@ -25,8 +25,8 @@
     width: 100%;
     background-color: #eff1f7;
     background: linear-gradient(to right, #ffffff, #eff1f7);
-    padding-top: 28px;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    padding-bottom: 10px;
     margin-bottom: 25px;
 }
 
@@ -40,17 +40,19 @@
     }
     &--second {
         font-size: 38px;
-        font-family: "Glober Bold", Arial, Helvetica, sans-serif;
+        font-family: "Glober", Arial, Helvetica, sans-serif;
         color: #727eb4;
         background: linear-gradient(to right, #737fbe, #727eb4);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: table;
         margin-bottom: 7px;
+        font-weight: 700;
     }
     &--third {
         color: #113653;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
+        font-weight: 700;
     }
 }
 .slide__bottom {
@@ -62,23 +64,24 @@
     width: 34%;
     font-size: 22px;
     color: #686c84;
-    margin-right: 25px;
+    margin-right: 27px;
 }
 .slide__tag {
-    width: 15%;
+    width: 16%;
     font-size: 18px;
-    font-family: "Glober Bold";
+    font-family: "Glober";
     color: #828699;
     border: 1px solid #dbdde1;
-    padding: 14px 29px 15px 22px;
+    padding: 10px 29px 0px 22px;
     position: relative;
+    font-weight: 700;
     &::before {
             content: '';
             position: absolute;
             left: 4px;
             top: 4px;
-            border-bottom: 20px solid #ffffff;
-            border-left: 20px solid #dbdde1;
+            border-bottom: 10px solid #ffffff;
+            border-left: 10px solid #dbdde1;
         }
     &::after {
         border-left: 1px solid #dbdde1;
@@ -95,6 +98,7 @@
 .slide__counter {
     font-size: 23px;
     color: #3a3a3a;
+    font-weight: 700;
     &--second {
         font-size: 26px;
     }

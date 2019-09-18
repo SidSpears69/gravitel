@@ -8,22 +8,24 @@
 }
 .features__text {
     color: #aac2e8;
-    font-family: "Glober Bold";
+    font-family: "Glober";
+    font-weight: 700;
     font-size: 43px;
-    line-height: 86.43px;
     text-transform: uppercase;
     z-index: 10;
     &--second {
         color: #6878ad;
         font-family: "Glober Bold";
         font-size: 99px;
-
+        line-height: 1;
         & span {
             font-size: 65px;
+            margin-left: -20px;
         }
     }
     &--third {
         font-size: 50px;
+        margin-top: -10px;
     }
     &--large {
         font-size: 60px;
@@ -32,12 +34,13 @@
 .features__items {
     justify-content: space-between;
     position: relative;
+    max-width: 1080px;
 }
 .features__item {
     background: #ffffff;
     text-align: center;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 .features__item--second {
     padding: 0;
@@ -53,7 +56,7 @@
         left: 50%;
         right: 50%;
         transform: translateX(-50%);
-        top: -75px;
+        top: -130px;
         &::before,
         &::after {
             content: "";

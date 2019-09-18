@@ -6,6 +6,7 @@
 .slider__img {
     height: 100%;
     text-align: center;
+    width:55px;
 }
 
 .slider__item {
@@ -16,11 +17,11 @@
 
 .slider__hexagon {
     margin: 0 auto;
-    width: 55px;
-    height: 100px;
+    width: 65px;
+    height: 110px;
     background: #5687ae;
     position: relative;
-
+    text-align: center;
     &::before,
     &::after {
         content: "";
@@ -28,18 +29,18 @@
         top: 0;
         width: 0;
         height: 0;
-        border-top: 50px solid transparent;
-        border-bottom: 50px solid transparent;
+        border-top: 55px solid transparent;
+        border-bottom: 55px solid transparent;
     }
 
     &::before {
-        right: -25px;
-        border-left: 25px solid #5687ae;
+        right: -30px;
+        border-left: 30px solid #5687ae;
     }
 
     &::after {
-        left: -25px;
-        border-right: 25px solid #5687ae;
+        left: -30px;
+        border-right: 30px solid #5687ae;
     }
 }
 
@@ -51,11 +52,12 @@
 
 .slider__term {
     color: #222533;
-    font-family: "Glober Semi Bold";
+    font-family: "Glober";
     font-size: 30px;
     padding: 20px 30px;
     background-color: #f5f7ff;
     border-radius: 20px;
+    font-weight: 600;
 }
 
 .slider__controls {
@@ -91,7 +93,7 @@
 .slider__control {
     display: flex;
     justify-content: space-between;
-    max-width: 1240px;
+    max-width: 1140px;
     margin: 0 auto;
     margin-top: 14px;
 }
@@ -105,11 +107,11 @@
     position: relative;
     padding-top: 25px;
     color: #5a5e68;
-    font-family: "Glober Semi Bold";
+    font-family: "Glober";
     font-size: 24px;
     margin-top: 0;
     box-sizing: border-box;
-
+    font-weight: 600;
     &:after {
         content: '';
         width: 55px;
@@ -121,7 +123,7 @@
 }
 
 .swiper-button-next {
-    padding-right: 75px;
+    padding-right: 65px;
     text-align: right;
 
     &:after {
@@ -131,7 +133,7 @@
 }
 
 .swiper-button-prev {
-    padding-left: 75px;
+    padding-left: 65px;
 
     &:after {
         background: url(../img/arrow-left.svg) center center no-repeat;
@@ -241,26 +243,27 @@
         height: 36px;
         background: url('../img/pagination.svg');
         background-size: cover;
+    } 
+    .slider__control {
+        max-width: 740px;
+    }
+}
+@media @mobile-widths {
+    .swiper-wrapper {
+        display: block;
     }
 
-    @media @mobile-widths {
-        .swiper-wrapper {
-            display: block;
-        }
-
-        .slider__text {
-            max-height: none;
-            padding: 0;
-            opacity: 1;
-            transition: all 0.25s ease-in-out;
-            padding-bottom: 15px;
-        }
-
-        .slider__control {
-            display: none;
-        }
+    .slider__text {
+        max-height: none;
+        padding: 0;
+        opacity: 1;
+        transition: all 0.25s ease-in-out;
+        padding-bottom: 15px;
     }
 
+    .slider__control {
+        display: none;
+    }
     .slider__input {
         &:checked~.slider__text {
             max-height: 0;

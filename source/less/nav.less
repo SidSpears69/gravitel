@@ -1,14 +1,14 @@
 .nav__item {
     font-size: 0;
-    margin-left: 20px;
-    padding-left: 25px;
+    padding-left: 33px;
     position: relative;
+    margin-right: 16px;
     &::after {
         content: '';
         display: block;
         position: absolute;
-        height: 60px;
-        width: 8px;
+        height: 70px;
+        width: 20px;
         background: url("../img/border.svg") center center no-repeat;
         left: 0;
         top: 50%;
@@ -16,6 +16,16 @@
         bottom: 50%;
         transform: translateY(-50%);
     }
+    &:first-child {
+            width: 31%;
+    }
+    &:nth-child(2) {
+            width: 14%;
+        }
+        &:nth-child(3) {
+                width: 24%;
+                margin-left: 22px;
+        }
 }
 @media @mobile-widths {
     .nav__item {
