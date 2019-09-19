@@ -103,23 +103,32 @@ margin: 0 auto;
     }
     }
     @media @mobile-widths {
+        .accordeon {
+            width: 100%;
+        }
+        .accordeon__column {
+            width: 100%;
+        }
         .accordeon__header {
-            padding-left: 5%;
-            padding-right: 5%;
-            border-radius: 0;
-            font-size: 16px;
-            padding-top: 19px;
-            padding-bottom: 11px;
-            margin-bottom: 15px;
+                padding-left: 6%;
+                padding-right: 6%;
+                border-radius: 0;
+                font-size: 16px;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                margin-top: 0;
             &::before {
                 display: none;
             }
         }
         .accordeon__text {
-            font-size: 14px;
-            padding-right: 5% !important;
-            padding-left: 5% !important;
-            padding-bottom: 15px;
+                font-size: 14px;
+                padding-right: 6% !important;
+                padding-left: 6% !important;
+                padding-bottom: 15px;
+                letter-spacing: 1.4px;
+                width: auto;
         }
         .accordeon__column:first-child .accordeon__item:first-child .accordeon__input {
             &:checked ~ .accordeon__text {

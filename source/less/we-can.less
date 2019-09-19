@@ -133,14 +133,19 @@ main {
     }
     }
     @media @mobile-widths {
+        .we-can {
+            max-width: 90%;
+        }
         .we-can__list {
-            padding-top: 19px;
+            padding-top: 10px;
+            max-width: 97%;
+            border-radius: 20px;
         }
         .we-can__term {
             font-size: 17px;
             text-align: left;
-            padding-left: 18px;
-            padding-right: 18px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .we-can__definition {
             font-size: 13px;
@@ -151,6 +156,8 @@ main {
             p {
                 padding-top: 14px;
                 padding-bottom: 14px;
+                letter-spacing: 0.34px;
+                line-height: normal;
             }
         }
         .we-can__definition--second {
@@ -160,13 +167,22 @@ main {
                 background: #ffffff;
                 border: 0;
             }
+            & p {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
         .we-can__more {
             font-size: 15px;
-            padding-top: 10px;
-            padding-bottom: 8px;
+            padding-top: 7px;
+            padding-bottom: 7px;
             border-width: 4px;
             border-radius: 10px;
-            bottom: -20px;
+            bottom: -30px;
+            width: 64%;
+            letter-spacing: 0.8px;
+            box-sizing: border-box;
+            padding-left: 5px;
+            padding-right: 5px;
         }
         }

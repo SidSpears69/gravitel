@@ -65,13 +65,24 @@
 
 @media @mobile-widths {
     .function {
-        margin-top: 24px;
+        margin-top: 26px;
+    }
+    .function__header {
+        flex-direction: column;
+        max-width: 84%;
+        margin: 0 auto;
+        margin-top: 26px;
+        margin-bottom: 5px;
     }
     .function__text {
-        max-width: 90%;
+        max-width: 85%;
         font-size: 18px;
         padding-top: 15px;
         padding-bottom: 15px;
+        padding-left: 0;
+        & span {
+            display: inline;
+        }
         &--second {
             padding-top: 11px;
             font-size: 15px;
@@ -80,5 +91,6 @@
     .function__wrapper--third {
         border-bottom: none;
         padding-bottom: 0;
+        margin-top: 5px;
     }
 }

@@ -274,7 +274,9 @@
     .swiper-wrapper {
         display: block;
     }
-
+    .slider__term {
+        text-align: center;
+    }
     .slider__text {
         max-height: none;
         padding: 0;
@@ -332,22 +334,27 @@
     .slider__hexagon {
         margin-left:25px;
         width: 45px;
-        height: 80px;
+        height: 65px;
         align-self: center;
         &::before,
         &::after {
-            border-top: 40px solid transparent;
-            border-bottom: 40px solid transparent;
+            border-top: 32px solid transparent;
+            border-bottom: 32px solid transparent;
         }
 
         &::before {
-            right: -20px;
-            border-left: 20px solid #5687ae;
+            right: -21px;
+            border-left: 21px solid #5687ae;
         }
 
         &::after {
-            left: -20px;
-            border-right: 20px solid #5687ae;
+            left: -21px;
+            border-right: 21px solid #5687ae;
         }
+    }
+    .slider__list {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
