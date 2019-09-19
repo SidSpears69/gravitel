@@ -57,12 +57,12 @@
         display: block;
         left: 25px;
         top: 25px;
-        bottom: 50%;
         transform: rotate(180deg);
         width: 25px;
         height: 13px;
         background: url("../img/arrow.svg") center center no-repeat;
         transition: all 0.25s ease-in-out;
+        background-size: cover;
     }
 }
 .accordeon__text {
@@ -77,9 +77,29 @@ margin: 0 auto;
 @media @tablet-widths {
     .accordeon {
         display: block;
+        width: 91%;
     }
     .accordeon__column {
-        width: 100%;
+        width: 98%;
+    }
+    .accordeon__header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 20px;
+        &::before {
+            width: 21px;
+            height: 12px;
+            left: 23px;
+            top: 20px;
+        }
+    }
+    .accordeon__input {
+        &:checked ~ .accordeon__header::before {
+            top: 20px;
+        }
+    }
+    .accordeon__text {
+        width: 96%;
     }
     }
     @media @mobile-widths {

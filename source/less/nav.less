@@ -27,6 +27,26 @@
                 margin-left: 22px;
         }
 }
+@media @tablet-widths {
+    .nav__item {
+        padding-left: 30px;
+        margin-right: 0;
+        &::after {
+            height: 60px;
+        }
+        &:first-child {
+                width: 32%;
+        }
+        &:nth-child(2) {
+                width: 15%;
+                margin-left: 8px;
+            }
+            &:nth-child(3) {
+                    width: 24%;
+                    margin-left: 20px;
+            }
+    }
+}
 @media @mobile-widths {
     .nav__item {
         margin: 20px 0;
